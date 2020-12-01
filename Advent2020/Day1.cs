@@ -41,15 +41,21 @@ namespace Advent2020
                     {
                         if (numbers[i] + numbers[j] + numbers[z] == 2020)
                         {
-                            System.Console.WriteLine(numbers[i].ToString() + " " + numbers[j].ToString()+ " " +  numbers[z].ToString());
+                            System.Console.WriteLine(numbers[i].ToString() + " " + numbers[j].ToString() + " " + numbers[z].ToString());
                             System.Console.WriteLine("Anwser = " + (numbers[i] * numbers[j] * numbers[z]));
-                            
+                            goto stopLoop;
                         }
 
                     }
+                    
                 }
             }
-        }
+
+        stopLoop:;
+            
+        
+    }
+
         public static List<int> ReadFile()
         {
             int counter = 0;
