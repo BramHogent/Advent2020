@@ -131,12 +131,11 @@ namespace Advent2020
                         switch (name)
                         {
                             case "byr":
-                            //   if (value.Equals("2016")) { 
+                            
                                 if (Int32.Parse(value) >=1920  && Int32.Parse(value) <=2002)
                                 {
                                     passport.byr = value;
                                 }
-                        //        }
                                 break;
                             case "iyr":
                                 if (Int32.Parse(value) >= 2010 && Int32.Parse(value) <= 2020)
